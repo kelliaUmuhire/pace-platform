@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Setup Guide
 
-## Getting Started
+This README provides a step-by-step guide to set up and run the project.
 
-First, run the development server:
+## Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Before you begin, ensure you have the following installed on your system:
+- [Node.js](https://nodejs.org/) (version 22.14.0 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) (depending on the package manager you prefer)
+- [Git](https://git-scm.com/) (for cloning the repository)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Steps to Set Up the Project
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. **Clone the Repository**  
+    Open your terminal and run the following command to clone the repository:
+    ```bash
+    git clone https://github.com/kelliaUmuhire/pace-platform.git
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Navigate to the Project Directory**  
+    Change into the project directory:
+    ```bash
+    cd pace-platform
+    ```
 
-## Learn More
+3. **Install Dependencies**  
+    Install the required dependencies using npm or yarn:
+    ```bash
+    npm install
+    ```
+    Or, if you prefer yarn:
+    ```bash
+    yarn install
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+4. **Set Up Environment Variables**  
+    Create a `.env` file in the root directory of the project and configure the required environment variables. Refer to the `.env.example` file for the list of variables needed:
+    ```bash
+    cp .env.example .env
+    ```
+    Open the `.env` file and update the values as needed.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. **Start the Development Server**  
+    Start the development server with the following command:
+    ```bash
+    npm start
+    ```
+    Or, if using yarn:
+    ```bash
+    yarn start
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+7. **Access the Application**  
+    Open your browser and navigate to `http://localhost:3000` to access the application.
 
-## Deploy on Vercel
+## Additional Notes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Linting**: To check for linting issues, use:
+  ```bash
+  npm run lint
+  ```
+  Or:
+  ```bash
+  yarn lint
+  ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Building for Production**: To build the project for production, use:
+  ```bash
+  npm run build
+  ```
+  Or:
+  ```bash
+  yarn build
+  ```
+
+## Troubleshooting
+
+If you encounter any issues during setup, consider the following:
+- Ensure all prerequisites are installed and up-to-date.
+- Verify that the `.env` file is correctly configured.
+- Check the project's documentation or open an issue in the repository for further assistance.
