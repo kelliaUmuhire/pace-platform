@@ -165,7 +165,7 @@ export default function Home() {
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <div className="h-56 w-full sm:h-72 md:h-96 lg:w-full lg:h-full flex items-center justify-center">
-            <img src='/group.svg' alt='Group'/>
+            <Image src='/group.svg' alt='Group'/>
           </div>
         </div>
       </div>
@@ -297,7 +297,7 @@ export default function Home() {
               Get in Touch
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              Have questions about PACE? We'd love to hear from you.
+              Have questions about PACE? We&apos;d love to hear from you.
             </p>
           </div>
 
